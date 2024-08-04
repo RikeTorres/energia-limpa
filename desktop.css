@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('lampada_1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    align-items: flex-start;
+    padding: 100px;
+    height: 800px;
+    background: linear-gradient(to bottom, #fbc512f1 75%, #f6d98e00 90%);
+}
+
+#logo {
+    margin-right: 90px; 
+    width: 370px; 
+}
+
+#logo img {
+    max-width: 100%; 
+    height: auto;
+}
+
+header > h1 {
+    margin: 90px;
+    font-size: 4em; 
+    color: white;
+}
+
+
+main {
+    padding: 20px;
+}
+
+main > div {
+    border: 1px solid #796b48;
+    background-color: rgba(52, 52, 52, 0.74);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.intro, .desenvolvimento, .desenvolvimento2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin: 0 auto;
+}
+
+.intro > div, .desenvolvimento > div, .desenvolvimento2 > div {
+    flex: 1; 
+    padding: 10px;
+}
+
+.intro > div > p, .desenvolvimento > div > p, .desenvolvimento2 > div > p {
+    text-align: justify;
+}
+
+.desenvolvimento > div > p, .desenvolvimento2 > div > p {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+iframe {
+    width: 40%; 
+    height: 250px; 
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+
+img {
+    margin: 0;
+    width: 80%;
+    border-radius: 8px;
+}
+
+
+ul {
+    display: grid;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+}
+
+.item1 {
+    grid-column-start: 2;
+}
+
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+
+.item5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+li {
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.47);
+    border-radius: 8px;
+}
+
+
+#ods {
+    transition: transform 0.3s ease-in-out; 
+    width: 50%;
+}
+
+#ods:hover {
+    transform: scale(1.2);
+}
+
+
+h3 {
+    font-size: 2em;
+    text-align: left;
+    margin-left: 80px;
+}
